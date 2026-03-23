@@ -68,22 +68,14 @@ public class askuser
         while (running)
         {
             System.out.println("Choose a row:");
-            System.out.println("1. Row A");
-            System.out.println("2. Row B");
-            System.out.println("3. Row C");
-            System.out.println("4. Row D");
-            System.out.println("5. Row E");
-            System.out.println("6. Row F");
-            System.out.println("7. Row G");
-            System.out.println("8. Row H");
-            System.out.println("9. Row I");
-            System.out.println("10. Row J");
-            System.out.println("11. Reserve");
+            System.out.println("1. Reserve seats");
+            System.out.println("2. View your Seats");
+            System.out.println("3. View available seats");
             System.out.print("Enter choice: ");
 
             int choice = input.nextInt();
 
-            if (choice == 11)
+            if (choice == 2)
             {
                 confirmation.printReceipt(order.getCart());
                 running = false;
@@ -96,14 +88,7 @@ public class askuser
             else if (choice == 2) selectedMenu = rowB;
             else if (choice == 3) selectedMenu = rowC;
             else if (choice == 2) selectedMenu = rowB;
-            else if (choice == 3) selectedMenu = rowC;
-            else if (choice == 2) selectedMenu = rowD;
-            else if (choice == 3) selectedMenu = rowE;
-            else if (choice == 2) selectedMenu = rowF;
-            else if (choice == 3) selectedMenu = rowG;
-            else if (choice == 2) selectedMenu = rowH;
-            else if (choice == 3) selectedMenu = rowI;
-            else if (choice == 10) selectedMenu = rowJ;
+            
             else 
             {
                 System.out.println("Invalid choice.");
