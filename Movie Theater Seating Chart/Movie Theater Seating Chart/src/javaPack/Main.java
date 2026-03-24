@@ -1,0 +1,12 @@
+package javaPack;
+
+public class Main 
+{
+
+	public static void main(String[] args) 
+	{
+		askuser ask = new askuser();
+
+	}
+
+}
