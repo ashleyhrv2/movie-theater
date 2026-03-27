@@ -49,7 +49,7 @@ public class arraymenu
 		}
 	}
 
-	public void addItem(String string) 
+	public void addItem(String selectedMenu) 
 	{
 		// TODO Auto-generated method stub
 		
